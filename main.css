@@ -1,0 +1,171 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Keep tag names out of classes - might be confusing later */
+.center {
+	text-align: center;
+	/* Text-align is good for positioning inline and inline-block only (not block level!) -- inherits */
+}
+
+.blockElement {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+}
+
+.vertical {
+	text-align: left;
+}
+
+/* If you have multiple items, line-height doubles up on space -- try padding  */
+/*
+.vertical > * {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px;
+}
+*/
+
+.verticalElement {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px;
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	display: inline;
+}
+
+.button {
+	display: inline-block;
+	background-color: #E74C3C;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-weight: lighter;
+	text-decoration: none;
+	border: none;
+}
+
+.button-large {
+	font-size: 30px;
+	padding: 20px 30px 20px 30px;
+}
+.button-regular {
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+}
+.button-small {
+	font-size: 14px;
+	padding: 5px 10px 5px 10px;
+}
+.navigation-menu {
+	background-color: #E74C3C;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.navigation-item {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navigation-item:hover {
+	background-color: LightCoral;
+}
+
+.navigation-item > a {
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
+}
+.pagination {
+	display: inline-block;
+}
+
+.pagination-anchor {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #E74C3C;
+	text-decoration: none;
+}
+
+.pagination-number {
+	display: inline-block;
+	color: #E74C3C;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 2px solid #E74C3C;
+	margin: 4px;
+	padding: 4px;
+}
+
+.pagination-inactive {
+	color: DarkGray;
+	border-bottom: none;
+}
+
+.media-container {
+	display: inline-block;
+	position: relative;
+	clear: both;
+}
+
+.media-image {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.media-text {
+	overflow: hidden;
+}
+
+.tabs {
+	position: relative;
+	left: 20px;
+}
+
+.tabs > li {
+	display: inline-block;
+}
+
+.tab {
+	display: inline-block;
+	border-radius: 15px 15px 0px 0px;
+	border: 1px solid DarkGray;
+	padding: 10px 20px 10px 20px;
+	position: relative;
+	color: DarkGray;
+	text-decoration: none;
+}
+
+.tab-active {
+	border-bottom: 2px solid white;
+}
+
+.tab-text {
+	border-radius: 15px;
+	border: 1px solid DarkGray;
+	padding: 15px;
+}
